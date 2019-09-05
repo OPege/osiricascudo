@@ -1,0 +1,71 @@
+body{
+    display: grid;
+    grid-template-areas: 'nav'
+                         'banner'
+                         'main'
+                         'section'
+                         'footer';
+    grid-template-columns: 100vw;
+    margin: 0;
+}
+
+header{
+    background-image: url(../image/Siri-Cascudo-Lanches.png);
+    background-repeat: no-repeat;
+    grid-area: banner;
+    height: 220px;
+}
+
+main{
+    grid-area: main;
+}
+
+main h1, main p {
+    text-align: center;
+
+}
+
+nav{
+    align-items: center;
+    background-color: orange;
+    display: flex;
+    grid-area: nav;
+    height: 45px;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+nav div{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+nav div span{
+    background-color: black;
+    height: 3px;
+    width: 30px;
+}
+nav div span{
+    background-color: black;
+    height: 3px;
+    width: 30px;
+}
+nav img{
+    width: 35px;
+}
+section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: section;
+}
+section .funcionarios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.funcionarios div img{
+    width: 100px;
+}
