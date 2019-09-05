@@ -11,6 +11,7 @@ body{
 
 header{
     background-image: url(../image/Siri-Cascudo-Lanches.png);
+    background-size: cover;
     background-repeat: no-repeat;
     grid-area: banner;
     height: 220px;
@@ -27,19 +28,21 @@ main h1, main p {
 
 nav{
     align-items: center;
-    background-color: orange;
+    background-color: red;
     display: flex;
     grid-area: nav;
     height: 45px;
     justify-content: space-between;
     padding: 0px 10px;
 }
-
-nav div{
+nav div:nth-child(2){
     display: flex;
     flex-direction: column;
     height: 20px;
     justify-content: space-between;
+}
+nav div:nth-child(3){
+    display: none;
 }
 nav div span{
     background-color: black;
@@ -68,4 +71,37 @@ section .funcionarios{
 }
 .funcionarios div img{
     width: 100px;
+}
+@media(min-width:580px){
+    header{
+        background-image: url(../image/siricascudo.jpg);
+    }
+    nav div a{
+        font-size:14pt;
+        text-decoration: none;
+    }
+    nav div:nth-child(2){
+        display: none;
+    }
+    nav div:nth-child(3){
+        display: block;
+    }
+    section .funcionarios{
+        width: 100vw;
+    }
+    section .funcionarios{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+@media(min-width:710px){
+    header{
+        background-image: url(../image/abacaxi.png);
+    }
+}
+@media(min-with:1322px){
+    header{
+          background-image: url(../image/abacaxi.png);
+    }
 }
